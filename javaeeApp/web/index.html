@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hehe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/libs/animate/animate.min.css" />
+        <link rel="stylesheet" href="assets/css/home.css" />
+        
+    </head>
+    <body>
+        
+        <div id="alert-wrapper"></div>
+        
+        <div id="error-wrapper" class="animated">
+            
+        </div>
+        
+        <div id="chat-wrapper" class="container">
+            <div id="chat-messages" class="row"></div>
+            <div id="chat-interface" class="row">
+                <div class="col-xs-12">
+                    <input id="chat-field" />
+                    <input type="button" id="chat-send-button" value="send" />
+                </div>
+            </div>
+            <div id="chat-looged-in-as" class="row">
+                <div id="logged-in-as" class="col-xs-6"></div>
+                <div class="col-xs-6">
+                    <input id="logout-button" value="logout" type="button" />
+                </div>
+            </div>
+        </div>
+        
+        <div id="login-wrapper" class="container animated fadeInLeft">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Login</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    Pick Your username:
+                    <input id="loginField" />
+                    <input type="button" value="Send" id="loginButton" />
+                </div>
+            </div>
+        </div>
+        
+        <div id="rooms-wrapper" class="container animated zero-height">
+            <div id="rooms-container" class="row">
+                <!----
+                <div class="col-xs-6 col-md-4 col-lg-3 room">
+                    <div class="col-xs-12 title">
+                        ROOM no. 1
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="glyphicon glyphicon-user"></div>
+                        5
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="button" id="join-button-1" class="join-button" value="join" />
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+        <div id="room-wrapper" class="container animated zero-height">
+            <div class="row">
+                <div id="room-name" class="col-xs-6"></div>
+                <div class="col-xs-6">
+                    <input id="leave-room-button" value="leave" type="button" />
+                </div>
+            </div>
+            <div class="row">
+                <div id="house-number-div" class="col-xs-12 number-div">_</div>
+            </div>
+            <div id="numbers-div" class="row"></div>
+            <div class="row">
+                <div id="timer-div" class="col-xs-12 glyphicon glyphicon-time">
+                    <div></div>
+                </div>
+            </div>
+            <div id="room-div" class="row">
+                
+            </div>
+        </div>
+        
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="assets/js/home.js"></script>
+    </body>
+</html>
